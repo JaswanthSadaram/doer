@@ -2,6 +2,25 @@
 nav
 {
   background: #E2EDFF;
+  position: absolute;
+  z-index: 100;
+  width: 98.7%;
+  max-height: 100px;
+}
+.mainSection
+{
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+div
+{
+  /* height: 100vh; */
+  scroll-snap-align: center;
+}
+.agenda{
+  scroll-snap-align: center;
 }
 nav a
 {
@@ -21,13 +40,14 @@ nav li
 {
   width: 80%;
   margin: auto;
+  max-height:70px;
 }
 .navBarRSVP button
 {
-  height: 48px;
-width: 151px;
+  /* height: 48px; */
+/* width: 130px; */
 border-radius: 4px;
-padding: 12px 54px 12px 54px;
+padding: 8px 30px 8px 30px;
   border:none;
   background: #2C3F6A;
 color: white;
@@ -160,6 +180,16 @@ letter-spacing: 0.20000000298023224px;
 text-align: left;
 }
 
+.boxes
+{
+    height: 60vh;
+}
+.b1,.b2,.b3
+{
+    background: white;
+    color: black;
+    border-radius: 10px;
+}
 
 .registerSection
 {
@@ -242,59 +272,50 @@ letter-spacing: 0.20000000298023224px;
 text-align: left;
 color:white;
 }
-.contactUsSection
-{
-  width: 80%;
-  margin: auto;
-}
+
 .contactUsTitle
 {
   font-family: Inter;
-font-size: 48px;
-font-weight: 700;
+font-size: 30px;
+font-weight: 500;
 line-height: 58px;
 letter-spacing: 0.20000000298023224px;
 text-align: left;
-color: white;
+color: #2C3F6A;
 }
 .contactUsText
 {
   font-family: Inter;
-font-size: 16px;
+font-size: 14px;
 font-weight: 500;
 line-height: 22px;
 letter-spacing: 0.20000000298023224px;
 text-align: left;
 color: white;
 }
-/* .mailUs
-{
-  font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0.20000000298023224px;
-text-align: right;
-  background: #E2EDFF;
-} */
 .callUs,.mailUs
 {
   border: none;
-  height: 59px;
-width: 163px;
 border-radius: 4px;
-padding: 10px 50px 10px 50px;
-background: #E2EDFF;
+padding: 5px 30px 5px 30px;
+background-color: #2C3F6A;
+color:white
 }
+
+
 footer
 {
   background-color: #F4F7FF1A;
   opacity: 1;
   min-height: 30vh;
 }
-/* .rotate {
-    animation: rotation 4s;
-  } */
+.footerContent
+{
+  width:80%;
+  margin: auto;
+
+}
+
   @keyframes rotation {
     from {
       transform: rotate(0deg);
@@ -306,4 +327,5 @@ footer
   
    .rotate-image {
     animation: rotation 10s linear infinite;
+    
   }
